@@ -18,10 +18,10 @@
     <title>Mobile App</title>
   </head>
   <body>
-    <header class="container dark-theme">
+    <header class="container dark-theme header">
       <div class="header-container">
         <a href="" class="logo link">Mobileapp</a>
-        <button type="button" class="button-open">
+        <button type="button" class="button-open js-open-menu">
           <svg class="button-open-icon" width="24" height="14">
             <use href="./images/icons.svg#burger"></use>
           </svg>
@@ -167,5 +167,36 @@
     <section class="container"></section>
     <section class="container"></section>
     <footer class="container"></footer>
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu-container">
+        <a href="" class="logo link">Mobileapp</a>
+        <button type="button" class="mobile-menu-close js-close-menu">
+          <svg width="19" height="19" class="mobile-menu-close-icon">
+            <use href="./images/icons.svg#close-button"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">home</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">features</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">team</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">testimonials</a>
+          </li>
+          <li class="mobile-nav-list-item">
+            <a href="" class="mobile-nav-list-link link">contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
