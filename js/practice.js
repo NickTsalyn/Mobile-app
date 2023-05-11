@@ -1,7 +1,10 @@
-const userInput = Number(prompt('Скільки буде 2+2*3'));
-if (userInput === 8) {
-  alert ('А хто тут такий молодець!!!');
+const userInput = prompt('Як звати твого домащнього улюбленця?');
+if (userInput === 'Аліса') {
+  alert('молодець!!!');
+} else if (userInput === 'Оскар') {
+  alert('молодець!!!');
+} else if (userInput === 'Джесі') {
+  alert('молодець!!!');
+} else {
+  alert('Пу-пу-пу, думай ще(((');
 }
-  else {
-  alert ('Пу-пу-пу, думай ще(((');
-  }
