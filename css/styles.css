@@ -105,6 +105,7 @@ body {
   |============================
 */
 
+
 .hero-section {
   padding: 100px 20px 126px 20px;
 }
@@ -115,6 +116,8 @@ body {
   line-height: 1.2;
   color: #ffffff;
   margin-bottom: 12px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .hero-title-text {
@@ -123,6 +126,17 @@ body {
   line-height: 1.21;
   color: #ffffff;
   margin-bottom: 28px;
+}
+
+.features-list-item-mark::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/arrow-right.svg);
+  fill: #ffffff;;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero-list-item-container1 {
@@ -143,6 +157,8 @@ body {
 
 .hero-list {
   margin-bottom: 40px;
+  width: 266px;
+  margin: 0 auto;
 }
 .hero-list-item {
   font-size: 12px;
