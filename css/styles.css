@@ -546,6 +546,7 @@ body {
   justify-content: center;
   gap: 14px;
   margin: 0 auto;
+  margin-bottom: 14px;
 }
 .social-list-item {
 }
@@ -567,9 +568,6 @@ body {
   flex-direction: column;
   gap: 12px;
   align-items: center;
-}
-
-.contact-list-item {
 }
 
 .contact-list-link-phone {
