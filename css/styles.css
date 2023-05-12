@@ -59,6 +59,14 @@ body {
   background: linear-gradient(0deg, #00c5eb33, #b544fe33);
 }
 
+.text-light-color {
+  color: #ffffff;
+}
+
+.text-dark-color {
+  color: #000000;
+}
+
 /**
   |============================
   |         HEADER
@@ -105,7 +113,6 @@ body {
   |============================
 */
 
-
 .hero-section {
   padding: 100px 20px 126px 20px;
 }
@@ -133,7 +140,7 @@ body {
   width: 18px;
   height: 18px;
   background-image: url(../images/arrow-right.svg);
-  fill: #ffffff;;
+  fill: #ffffff;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,6 +166,7 @@ body {
   margin-bottom: 40px;
   width: 266px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 .hero-list-item {
   font-size: 12px;
@@ -198,7 +206,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
-  color: #000000;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 40px;
@@ -209,7 +216,6 @@ body {
   font-size: 14px;
   line-height: 1.43;
   text-align: center;
-  color: #000000;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
@@ -312,8 +318,270 @@ body {
 .mobile-nav-list-link:focus,
 .mobile-nav-list-hover:hover {
   background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+}
+
+/**
+  |============================
+  |       VIDEO SECTION
+  |============================
+*/
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.video-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.app-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.app-list-link {
+  border-radius: 50%;
+}
+
+/**
+  |============================
+  |       OUR TEAM
+  |============================
+*/
+
+.team {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.team-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  margin-bottom: 28px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-list-item {
+  width: 280px;
+  background: linear-gradient(
+      105.09deg,
+      rgba(0, 197, 235, 0.5) -13.66%,
+      rgba(181, 68, 254, 0.5) 104.34%
+    ),
+    #06071b;
+
+  border-radius: 15px;
+}
+
+.team-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.team-list-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.team-list-img {
+  width: 100%;
+  height: 100%;
+}
+
+.team-list-img-wrapper {
+  width: 248px;
+  height: 303px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 16px 16px 0 16px;
+  margin-bottom: 24px;
+}
+
+/**
+  |============================
+  |       OUR TEAM
+  |============================
+*/
+
+.contact-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 8px;
+  padding-top: auto;
+}
+.form-message {
+  width: 100%;
+  height: 220px;
+  background: #ffffff;
+  border-radius: 5px;
+  position: relative;
+  padding-left: 8px;
+  padding-top: 12px;
+}
+
+.form-input::placeholder {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #939eac;
+}
+
+.form-message::placeholder {
+  position: absolute;
+  top: 12px;
+  left: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #939eac;
+}
+
+.submit-button {
+  width: 180px;
+  height: 42px;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.sub-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 280px; */
+  margin-bottom: 50px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto;
+}
+.social-list-item {
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+  border-radius: 50%;
+}
+.social-list-icon {
+  fill: #ffffff;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.contact-list-item {
+}
+
+.contact-list-link-phone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.contacts-list-link-email {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.21;
+  text-align: center;
 }
